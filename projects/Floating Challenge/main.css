@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: radial-gradient(closest-side, #171d20, #28c5d3, #0b0606);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+section {
+  border: 5px solid rgba(240, 234, 234, 0.54);
+  border-radius: 0.7em;
+  margin: 300px 50px 300px 50px;
+  background-color: #00eaff7b;
+  overflow: hidden;
+  box-shadow: 0 0 100px 1px rgb(18, 233, 241);
+}
+div {
+  transition: 0.5s;
+  border-radius: 0.4em;
+  font-size:30px;
+  text-align: center;
+}
+div:hover {
+  opacity: 0.4;
+}
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #13558b;
+  left: 50%;
+  bottom: 5px;
+  z-index: 10;
+  transform: translateX(-50%);
+  width: 500px;
+  min-height: 50px;
+  border-radius: 1.5em;
+  box-shadow: 0 0 100px 5px rgb(4, 15, 20);
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: rgb(242, 248, 254);
+  padding: 6px;
+  border: 4px dotted transparent;
+  border-radius: 0.4em;
+  animation: none;
+  transition: 0.6s;
+}
+ 
+
+nav a:hover {
+  color: #0b0606;
+  background-color: aqua;
+  border: 4px dotted black;
+}
+
+/* Section 1 */
+#one {
+  height: 100vh;
+}
+#one div:nth-child(1) {
+  height: 10%;
+  background-color: brown;
+}
+#one div:nth-child(2),
+#one div:nth-child(3) {
+  height: 90vh;
+  width: 50%;
+  float: left;
+}
+#one div:nth-child(2) {
+  background-color: burlywood;
+}
+#one div:nth-child(3) {
+  background-color: rgba(25, 205, 255);
+}
+
+/* Section 2 */
+#two {
+  height: 100vh;
+}
+#two div:nth-child(1) {
+  background-color: aqua;
+  height: 10%;
+}
+#two div:nth-child(2),
+#two div:nth-child(3),
+#two div:nth-child(4) {
+  float: left;
+}
+#two div:nth-child(2) {
+  background-color: bisque;
+  width: 10%;
+  height: 90%;
+}
+#two div:nth-child(3) {
+  background-color: rgb(185, 116, 31);
+  width: 80%;
+  height: 90%;
+}
+#two div:nth-child(4) {
+  background-color: rgb(72, 47, 16);
+  width: 10%;
+  height: 90%;
+}
+/* Section 3 */
+
+#three {
+  height: 100vh;
+}
+#three div:nth-child(1) {
+  height: 10%;
+  background-color: brown;
+}
+
+#three div:nth-child(3),
+#three div:nth-child(2) {
+  width: 50%;
+  height: 90%;
+  float: left;
+}
+#three div:nth-child(2) {
+  background-color: #13558b;
+}
+#three div:nth-child(3) {
+  background-color: greenyellow;
+}
+/* Four */
+#four {
+  height: 100vh;
+}
+#four div:nth-child(1),
+#four div:nth-child(4) {
+  height: 13%;
+}
+#four div:nth-child(4) {
+  background-color: beige;
+}
+#four div:nth-child(1) {
+  background-color: cadetblue;
+}
+#four div:nth-child(3) {
+  height: calc(70% - 20px);
+  margin: 10px;
+  background-color: coral;
+}
+#four div:nth-child(2) {
+  height: 4%;
+  background-color: aquamarine;
+}
+/* Five */
+#five {
+  height: 100vh;
+}
+#five div:nth-child(1),
+#five div:nth-child(4) {
+  height: 13%;
+}
+#five div:nth-child(4) {
+  background-color: beige;
+}
+#five div:nth-child(1) {
+  background-color: cadetblue;
+}
+#five div:nth-child(3) {
+  height: calc(70% - 20px);
+  margin: 10px;
+  background-color: transparent;
+}
+
+#five #par div:nth-child(n) {
+  width: 50%;
+  height: 50%;
+}
+#five #par div:nth-child(1) {
+  background-color: aqua;
+  float: left;
+}
+#five #par div:nth-child(2) {
+  background-color: rgb(164, 221, 221);
+  float: right;
+}
+#five #par div:nth-child(3) {
+  background-color: rgb(21, 176, 39);
+  float: right;
+  margin: 0;
+}
+#five #par div:nth-child(4) {
+  background-color: rgb(0, 255, 123);
+  float: left;
+}
+
+#five > div:nth-child(2) {
+  height: 4%;
+  background-color: rgb(139, 204, 19);
+}
+/* Six */
+#six {
+  height: 100vh;
+}
+#six div:nth-child(1),
+#six div:nth-child(4) {
+  height: 13%;
+}
+#six div:nth-child(4) {
+  background-color: beige;
+}
+#six div:nth-child(1) {
+  background-color: cadetblue;
+}
+#six div:nth-child(3) {
+  height: calc(70% - 20px);
+  margin: 10px;
+}
+
+#six #par #chi1 div {
+  background-color: rgb(255, 148, 127);
+}
+#six #par #chi2 div {
+  background-color: rgb(74, 204, 54);
+}
+#six #par #chi3 div {
+  background-color: rgb(243, 74, 223);
+}
+#six #par #chi4 div {
+  background-color: rgb(23, 66, 164);
+}
+#six #par #chi1 div,
+#six #par #chi2 div,
+#six #par #chi3 div,
+#six #par #chi4 div {
+  display: grid;
+  place-items: center;
+  border: rgba(57, 62, 53, 0.425) 6px solid;
+  border-radius: 0.6em;
+}
+#six #par div:nth-child(n) {
+  background-color: transparent;
+  float: left;
+  height: 50%;
+  margin: 0;
+  width: 50%;
+}
+
+#six > div:nth-child(2) {
+  height: 4%;
+  background-color: rgb(139, 204, 19);
+}

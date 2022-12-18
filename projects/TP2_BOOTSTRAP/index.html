@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP2 Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 200px;
+        border-radius: 1.5rem;
+      }
+      .c1,
+      .c2,
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      span {
+        position: relative;
+        width: 1.5rem;
+        aspect-ratio: 1;
+      }
+      span::before {
+        content: "⭐";
+        position: absolute;
+      }
+      span::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background-color: black;
+        border-radius: 2rem;
+        top: 50%;
+        left: 1.5rem;
+        box-shadow: calc(-100px - 1.5rem) 0 0;
+      }
+
+      .grids {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: space-between;
+      }
+      .parag {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="c1 bg-danger p-4">
+      <div class="">
+        <img class="mb-3" src="./assets/img/avataaars.svg" alt="" />
+        <h1 class="text-uppercase text-black-50">Start bootsrap</h1>
+        <span></span>
+        <p class="text-black-50">Ghraphic-Web Desigin-ilustrator</p>
+      </div>
+    </section>
+    <section class="c2 p-4">
+      <div class="p-4">
+        <h2 class="text-uppercase">portfolio</h2>
+        <span></span>
+        <div class="grids">
+          <img src="./assets/img/portfolio/cabin.png" alt="" />
+          <img src="./assets/img/portfolio/cake.png" alt="" />
+          <img src="./assets/img/portfolio/circus.png" alt="" />
+          <img src="./assets/img/portfolio/game.png" alt="" />
+          <img src="./assets/img/portfolio/safe.png" alt="" />
+          <img src="./assets/img/portfolio/submarine.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="c3 bg-danger p-4">
+      <div class="">
+        <h1 class="text-uppercase text-black-50">about</h1>
+        <span></span>
+        <div class="parag w-50">
+          <p class="me-5 w-50 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque
+            tempora, fuga ea est itaque ipsum veniam eius possimus incidunt!
+          </p>
+          <p class="w-50 text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo neque
+            tempora, fuga ea est itaque ipsum veniam eius possimus incidunt!
+          </p>
+        </div>
+        <div class="btn btn-outline-dark mt-4">Free Download</div>
+      </div>
+    </section>
+    <section>
+      <div class="mt-5">
+        <h2 class="text-uppercase display-4">contact</h2>
+        <span></span>
+      </div>
+      <div class="container mt-5">
+        <form action="" class="container-fluid bg-danger rounded p-5">
+          <label for="" class="text-capitalize d-block form-lab"
+            >full Name</label
+          >
+          <input
+            type="text"
+            placeholder="Enter your name...."
+            class="d-block form-control"
+          />
+          <label for="" class="text-capitalize d-block form-lab"
+            >email address</label
+          >
+          <input
+            type="email"
+            placeholder="name@exampel.com"
+            class="d-block form-control"
+          />
+          <label for="" class="text-capitalize d-block form-lab"
+            >phone number</label
+          >
+          <input
+            type="number"
+            placeholder="(123)456-7890"
+            class="d-block form-control"
+          />
+          <label for="" class="text-capitalize d-block form-lab">message</label>
+          <textarea
+            name=""
+            id=""
+            rows="10"
+            class="form-control"
+            placeholder="Enter text message here....."
+          ></textarea>
+          <input
+            type="submit"
+            value="Send"
+            class="p-3 rounded mt-4 btn btn-primary"
+          />
+        </form>
+      </div>
+    </section>
+    <section class="w-100 bg-info px-5 mt-5 row">
+      <div class="col-4 p-5">
+        <h1 class="mb-4">Location</h1>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sit?
+        </p>
+      </div>
+      <div class="col-4 p-5">
+        <h1 class="mb-4">AROUND THE WEB</h1>
+        <div class="icons w-100 d-flex flex-row fs-1 justify-content-around">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+      <div class="col-4 p-5">
+        <h1 class="mb-4">Location</h1>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sit?
+        </p>
+      </div>
+    </section>
+    <main class="bg-dark text-center text-white-50 p-4">
+      copyright my web site 2020
+    </main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-4 pe-4">
+      <div class="container-fluid d-flex flex-row justify-content-start">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <div class="d-flex navbar-nav">
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+        </div>
+      </div>
+      <div class="flex-row">
+        <input type="text" name="" id="" class="form-control-sm me-2" />
+        <input type="button" value="Search" class="btn btn-primary btn-sm" />
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger my-4 pe-4">
+      <div class="container-fluid d-flex flex-row justify-content-start">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <div class="d-flex navbar-nav">
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+        </div>
+      </div>
+      <div class="flex-row">
+        <input type="text" name="" id="" class="form-control-sm me-2" />
+        <input type="button" value="Search" class="btn btn-primary btn-sm" />
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info my-4 pe-4">
+      <div class="container-fluid d-flex flex-row justify-content-start">
+        <a href="#" class="navbar-brand">LOGO</a>
+        <div class="d-flex navbar-nav">
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+          <a href="" class="nav-link">link</a>
+        </div>
+      </div>
+      <div class="flex-row">
+        <input type="text" name="" id="" class="form-control-sm me-2" />
+        <input type="button" value="Search" class="btn btn-primary btn-sm" />
+      </div>
+    </nav>
+    <script src="./bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

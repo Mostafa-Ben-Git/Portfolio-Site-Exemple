@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+body {
+  position: relative;
+  background: linear-gradient(#000000e7, #808080, orange);
+}
+
+.header-con,
+.header-nav {
+  background-color: black;
+  z-index: 12222;
+}
+.container,
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 0 auto;
+  max-width: 940px;
+}
+.container ul {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+}
+ul li {
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.container i:hover,
+.nav i:hover {
+  color: orange;
+}
+.container a:hover,
+.nav a:hover {
+  justify-content: end;
+  text-decoration-line: underline;
+  color: orange;
+}
+
+.container ul li i {
+  position: relative;
+  font-size: 2em;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+#bag {
+  position: absolute;
+  background-color: rgb(0, 174, 255);
+  padding: 5px;
+  font-size: 10px;
+  top: 7px;
+  transform: translate(-80%, -50%);
+  border-radius: 50%;
+}
+.header-nav {
+  position: sticky;
+  top: -2px;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  list-style: none;
+}
+.icon2 {
+  display: flex;
+  width: 20%;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-size: 2em;
+}
+
+.foot-fix-con {
+  position: fixed;
+  height: 10vh;
+  bottom: 0;
+  background-color: #ffcc00;
+  width: 100%;
+  box-shadow: 0 2px 20px black;
+}
+.foot-fix {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 940px;
+}
+.foot-fix div {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.foot-fix div i {
+  font-size: 1.7rem;
+}
+.foot-fix div p {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.foot-fix div:hover {
+  color: rgb(152, 99, 0);
+  text-decoration: underline;
+}
+article {
+  margin: 0 auto;
+  max-width: 940px;
+  min-height: 200vh;
+}
+
+article section > h1 {
+  color: #ffcc00;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+.main1-icon {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.main1-icon a {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+.main1-icon a:hover {
+  color: #876500;
+  text-decoration: none;
+}
+.main1 .img {
+  display: grid;
+  margin-top: 50px;
+  gap: 20px;
+  grid-template-areas:
+    "side h1"
+    "side h2";
+}
+.div1 {
+  grid-area: side;
+  background: url(../img/fibre.jpg);
+  border-radius: 0.7em;
+  height: 70vh;
+}
+.div2 {
+  background: url(../img/fibre.jpg);
+  grid-area: h1;
+  border-radius: 0.7em;
+}
+.div3 {
+  background: url(../img/fibre.jpg);
+  grid-area: h2;
+  border-radius: 0.7em;
+}
+.info-con {
+  height: 80vh;
+  width: 100%;
+  margin-bottom: 10vh;
+  background-color: #000000;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: white;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: black;
+  padding: 20px;
+}
+.info > * {
+  border-bottom: 1px solid white;
+}
+.info li:hover {
+  color: orange;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.info-icons * {
+  display: inline;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  border-radius: 50%;
+}
+.info-icons i {
+  font-size: 2rem;
+  background-color: aliceblue;
+  color: black;
+  padding: 5px;
+}
+.info-icons i:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.info-list {
+  display: flex;
+}
+
+.info-list ul {
+  list-style: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 20px;
+}
+.info-list h2 {
+  margin-bottom: 20px;
+}
+.info-list ul li {
+  line-height: 2;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.info-more ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.info-more li {
+  font-size: 1.4rem;
+}
+.copyright * {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+.cart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cart1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  background-color: #624e28b0;
+  padding: 20px;
+  margin: 20px 10px;
+  transition: 1s;
+}
+.cart1::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to bottom, orange, black);
+  border-radius: 1em;
+  z-index: -11;
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
+  animation: scale 1s infinite linear alternate;
+}
+.cart1::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to bottom, orange, black);
+  border-radius: 1em;
+  z-index: -1;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+}
+
+@keyframes scale {
+  from {
+    transform: scale(.95);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.cart1::before {
+  filter: blur(25px);
+}
+.cart1:hover {
+  background-color: rgba(255, 255, 255, 0.822);
+}
+.cart1 img {
+  width: 200px;
+  height: 400px;
+}
+.cart1 img:hover {
+  width: 200px;
+  height: 400px;
+  transform: scale(1.1);
+}
+
+.cart p:nth-child(1) {
+  background-color: #ffcc00;
+}
+.cart .nn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-left: 10px;
+  background-color: green;
+  height: 40px;
+  width: 100px;
+  border-radius: 0.2rem;
+}
+.cart .nn::before {
+  content: "";
+  position: absolute;
+  border: 20px solid;
+  top: 0;
+  left: -1px;
+  transform: translate(-100%);
+  border-color: transparent green transparent transparent;
+}
+.cart .nn::after {
+  content: "";
+  position: absolute;
+  background-color: aliceblue;
+  height: 6px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
+}
+.cart h3 {
+  font-size: 2rem;
+}
+.cart button {
+  background-color: #000000;
+  color: azure;
+  font-size: 2rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+  padding: 10px;
+  font-weight: 700;
+  color: gray;
+  cursor: pointer;
+}
+.cart button:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+  color: aliceblue;
+  text-shadow: 0 0 10px white;
+}
+.cart .prix {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: orange;
+  text-shadow: 1px 1px black;
+}
+.tv {
+  display: flex;
+  width: 100%;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tv div {
+  display: flex;
+  padding: 20px;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #000000;
+  border-radius: 0.7rem;
+}
+.tv h3 {
+  font-size: 2rem;
+}
+
+.tv img {
+  transform: translateX(-10%);
+}
+.tv p {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: orange;
+}
+.tv button {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  background-color: #000000;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.tv button:hover {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border: 3px solid black;
+}
+.main4 .game {
+  display: flex;
+  justify-content: flex-start;
+}
+.main4 .game div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #000000;
+  color: white;
+  margin-right: 15px;
+  height: 50vh;
+  width: min-content;
+}
+.main4 .game div div {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+.main4 .game div div p {
+  font-size: 1rem;
+}
+.main4 .game div div button {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  width: fit-content;
+  background-color: #000000;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.main4 .game div div button:hover {
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border: 3px solid black;
+}
+.event {
+  display: flex;
+  justify-content: space-evenly;
+}
+.event p {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.extra-con {
+  margin-top: 40px;
+  background: linear-gradient(to right, #eee, black);
+}
+.extra {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px 0 0 20px;
+}
+.extra img {
+  mix-blend-mode: color-dodge;
+}
+.extra button {
+  height: fit-content;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 800;
+  width: fit-content;
+  transform: translateY(100%);
+  background-color: #000000;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.extra h2 {
+  margin-bottom: 10px;
+}
+
+.extra ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+.extra ul li::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  aspect-ratio: 1;
+  background-color: orange;
+  top: 50%;
+  left: -10px;
+}
+.extra button:hover {
+  color: black;
+  font-weight: 600;
+  background-color: white;
+  border: 3px solid black;
+}
+.extra img {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 800px) {
+  .cart {
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tv {
+    flex-direction: column;
+  }
+  .tv div {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .tv div img {
+    width: 100%;
+    transform: translateX(10px);
+    margin-bottom: 30px;
+  }
+  .main1 .img {
+    grid-template-areas:
+      "side side"
+      "h1 h2";
+  }
+  .main1 .div1 {
+    width: 100%;
+    height: 40vh;
+  }
+  .main1 .div2,
+  .main1 .div3 {
+    width: 100%;
+    height: 40vh;
+  }
+  .event {
+    flex-wrap: wrap;
+  }
+  .main4 .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main4 .game div {
+    width: 90%;
+    height: 100vh;
+    margin: 20px;
+    overflow: hidden;
+  }
+  .main4 .game div img {
+    width: 100%;
+  }
+  .info-con {
+    margin-bottom: 20vh;
+  }
+}

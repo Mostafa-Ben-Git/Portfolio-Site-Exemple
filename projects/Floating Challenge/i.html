@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      article {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        background-color: rgb(90, 33, 23);
+        height: 100vh;
+        width: 100%;
+      }
+      article a {
+        font-size: 5em;
+        text-decoration: none;
+        background-color: #13558b;
+        border-radius: 0.6em;
+        padding: 15px;
+        color: #eee;
+        border: 1px solid white;
+        box-shadow: 0 0 50px black;
+        cursor: pointer;
+        animation: scale 0.4s linear infinite alternate;
+      }
+      @keyframes scale {
+        0% {
+          transform: scale(1);
+        }
+        0% {
+          transform: scale(1.1);
+        }
+      }
+      article span:checked {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <article><a href="./index1.html">Click me</a></article>
+  </body>
+</html>

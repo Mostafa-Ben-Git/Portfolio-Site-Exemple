@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP FLEX</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: capitalize;
+      }
+      body {
+        position: relative;
+        overflow: hidden;
+        background-color: black;
+      }
+      .no {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        opacity: .9;
+      }
+      .part {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        
+        justify-content: center;
+        background-color: transparent;
+      }
+      .part:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(
+          45deg,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000,
+          #fb0094,
+          #0000ff,
+          #00ff00,
+          #ffff00,
+          #ff0000,
+          aqua,
+          purple
+
+        );
+        background-size: 400%;
+        width: calc(96% + 4px);
+        height: calc(70% + 4px);
+        z-index: -1;
+        border-radius: 0.7rem;
+        animation: steam 20s linear infinite;
+        filter: blur(50px);
+      }
+
+      @keyframes steam {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 600%;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+
+      .part * {
+        border-radius: 1em;
+      }
+      .child1 {
+        display: flex;
+        justify-content: center;
+        width: 16%;
+        height: 100%;
+        background-color: yellow;
+      }
+      .child2 {
+        width: 80%;
+        height: 100%;
+        background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .info1 {
+        width: 90%;
+        background-color: aqua;
+        height: 60%;
+        border: 2px solid black;
+      }
+      .child2 .info2,
+      .child2 .info3 {
+        width: 90%;
+        height: 8%;
+        border: 2px solid black;
+        background-color: aqua;
+      }
+      .child2 > span {
+        color: aliceblue;
+      }
+      span {
+        font-size: 2rem;
+      }
+      .info1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .info1 span:nth-child(1) {
+        font-size: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="no">
+      <div class="part">
+        <div class="child1">
+          <span>flex-bandeau</span>
+        </div>
+        <div class="child2">
+          <div class="info1">
+            <span>info1</span>
+            <span>c'est une information importante </span>
+          </div>
+          <div class="info2"><span>info2</span></div>
+          <div class="info3"><span>info3</span></div>
+          <span>Flex contenu</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
