@@ -11,7 +11,7 @@
         margin: 0;
         padding: 0;
       }
-      div {
+      #loader {
         display: grid;
         place-items: center;
         position: relative;
@@ -19,14 +19,14 @@
         min-height: 100vh;
         background-color: black;
       }
-      span {
+      #loader span {
         position: relative;
         overflow: hidden;
         color: aliceblue;
         font-size: 6em;
         letter-spacing: 8px;
       }
-      span::before {
+      #loader span::before {
         content: "";
         position: absolute;
         width: 100%;
@@ -37,7 +37,7 @@
         mix-blend-mode: difference;
         animation: slide-down linear infinite;
       }
-      span::after{
+      #loader span::after{
         content: '';
         position: absolute;
         width: 10%;
@@ -70,7 +70,7 @@
     </style>
   </head>
   <body>
-    <div>
+    <div id="loader">
       <span>Loading</span>
     </div>
   </body>

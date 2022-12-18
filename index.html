@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div id="loader">
+      <span>Loading</span>
+    </div>
     <div class="slide">
       <div class="left"></div>
       <div class="right"></div>
@@ -334,6 +337,12 @@
         </div>
       </div>
     </section>
+    <script>
+      let load = document.getElementById("loader");
+      window.addEventListener("load", function () {
+        load.style.display = "none";
+      });
+    </script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/all.min.js"></script>
     <script src="./js/main.js"></script>
