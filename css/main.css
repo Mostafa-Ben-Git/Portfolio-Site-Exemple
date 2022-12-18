@@ -365,7 +365,7 @@ border-radius: 10px; */
   -webkit-text-fill-color: transparent;
   border-right: 7px solid;
   margin: 20px 0;
-  animation: pop 0.6s infinite, type 5s 2s steps(19) forwards;
+  animation: pop 0.6s infinite, type 5s 4s steps(19) forwards;
 }
 @keyframes type {
   to {
