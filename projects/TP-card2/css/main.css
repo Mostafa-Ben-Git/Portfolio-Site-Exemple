@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.c1 img {
+  width: 200px;
+  border-radius: 1.5rem;
+}
+.c1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+span {
+  position: relative;
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+span::before {
+  content: "⭐";
+  position: absolute;
+}
+span::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: black;
+  border-radius: 2rem;
+  top: 50%;
+  left: 1.5rem;
+  box-shadow: calc(-100px - 1.5rem) 0 0;
+}
+.parag {
+  display: flex;
+  flex-direction: row;
+}

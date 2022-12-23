@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    section {
+      background-color: #191fc9;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+    .card{
+      transition: .7s;
+      cursor: pointer;
+    }
+    .row{
+      border: 2px solid black;
+      border-radius: 30px;
+      backdrop-filter: 50px;
+
+    }
+    .row:hover  .card:not(:hover) {
+      transform: scale(.9);
+      opacity: .7;
+    }
+    .row:hover  .card:hover {
+      transform: scale(1.08);
+    }
+  </style>
+  <body>
+    <section>
+      <div class="container p-0 row">
+        <div class="padding p-3 col-lg-4 col-md-6 h-100">
+          <div class="card overflow-hidden">
+            <img src="./portfolio/cabin.png" alt="" class="img-fluid" />
+            <div class="card-body">
+              <h1>Animal Farm</h1>
+              <h5 class="text-black-50 card-title">Mostafa Ben</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                expedita numquam et earum labore. Corporis amet mollitia
+                nesciunt ea, minus harum totam deleniti repellat laborum
+                similique, voluptate debitis, asperiores reprehenderit!
+              </p>
+              <input type="button" value="Read More" class="btn btn-primary" />
+            </div>
+          </div>
+        </div>
+        <div class="padding p-3 col-lg-4 col-md-6">
+          <div class="card overflow-hidden">
+            <div class="card-header">
+              <h1 class="card-title">LIfe After Life</h1>
+              <h5 class="text-black-50">Mostafa Ben</h5>
+            </div>
+            <img src="./portfolio/cabin.png" alt="" class="img-fluid" />
+            <div class="card-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                expedita numquam et earum labore. Corporis amet mollitia
+                nesciunt ea, minus harum totam deleniti repellat laborum
+                similique, voluptate debitis, asperiores reprehenderit!
+              </p>
+              <input
+                type="button"
+                value="Read More"
+                class="btn btn-primary w-100"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="padding p-3 col-lg-4 col-md-6">
+          <div class="card overflow-hidden">
+            <div class="card-body">
+              <h1 class="card-title">Animal Farm</h1>
+              <h5 class="text-black-50">Mostafa Ben</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                expedita numquam et earum labore. Corporis amet mollitia
+                nesciunt ea, minus harum totam deleniti repellat laborum
+                similique, voluptate debitis, asperiores reprehenderit!
+              </p>
+            </div>
+            <div class="links container text-center card-link p-3">
+              <a href="#" class="card-link text-decoration-none p-3"
+                >Read more</a
+              >
+              <a href="#" class="card-link text-decoration-none p-3"
+                >Save for later</a
+              >
+            </div>
+            <img src="./portfolio/cabin.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container row">
+        <div class="padding col-lg-4 col-md-6 p-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="header d-flex justify-content-between">
+                <div class="icon-content d-flex">
+                  <div class="icon display-4 bg-danger px-2 rounded-3">
+                    <i class="fa-brands fa-mailchimp"></i>
+                  </div>
+                  <div
+                    class="content justify-content-center d-flex flex-column ms-2"
+                  >
+                    <h6 class="mb-0">Mailchimp</h6>
+                    <span>1days ago</span>
+                  </div>
+                </div>
+                <div class="align-items-center d-flex fs-4">
+                  <span class="badge bg-warning text-dark rounded-pill"
+                    >Design</span
+                  >
+                </div>
+              </div>
+              <h1 class="my-5 card-title">Senior Product Designer-Singapore</h1>
+              <div class="progress mb-4">
+                <div
+                  class="progress-bar-animated progress-bar-striped bg-danger"
+                  role="progressbar"
+                  style="width: 32%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <p>
+                32 Applied <span class="text-black-50">of 50 capacity</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="padding col-lg-4 col-md-6 p-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="header d-flex justify-content-between">
+                <div class="icon-content d-flex">
+                  <div class="icon display-4 bg-danger px-2 rounded-3">
+                    <i class="fa-brands fa-dribbble"></i>
+                  </div>
+                  <div
+                    class="content justify-content-center d-flex flex-column ms-2"
+                  >
+                    <h6 class="mb-0">Dribbble</h6>
+                    <span>4days ago</span>
+                  </div>
+                </div>
+                <div class="align-items-center d-flex fs-4">
+                  <span class="badge bg-warning text-dark rounded-pill"
+                    >Product</span
+                  >
+                </div>
+              </div>
+              <h1 class="my-5 card-title">Junior Product Designer-Singapore</h1>
+              <div class="progress mb-4">
+                <div
+                  class="progress-bar-animated progress-bar-striped bg-danger"
+                  role="progressbar"
+                  style="width: 42%"
+                  aria-valuenow="24"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <p>
+                42 Applied <span class="text-black-50">of 70 capacity</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="padding col-lg-4 col-md-6 p-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="header d-flex justify-content-between">
+                <div class="icon-content d-flex">
+                  <div class="icon display-4 bg-danger px-2 rounded-3">
+                    <i class="fa-brands fa-reddit"></i>
+                  </div>
+                  <div
+                    class="content justify-content-center d-flex flex-column ms-2"
+                  >
+                    <h6 class="mb-0">Reddit</h6>
+                    <span>2days ago</span>
+                  </div>
+                </div>
+                <div class="align-items-center d-flex fs-4">
+                  <span class="badge bg-warning text-dark rounded-pill"
+                    >Design</span
+                  >
+                </div>
+              </div>
+              <h1 class="my-5 card-title">Software Product Designer-Singapore</h1>
+              <div class="progress mb-4">
+                <div
+                  class="progress-bar-animated progress-bar-striped bg-danger"
+                  role="progressbar"
+                  style="width: 52%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <p>
+                52 Applied <span class="text-black-50">of 100 capacity</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
