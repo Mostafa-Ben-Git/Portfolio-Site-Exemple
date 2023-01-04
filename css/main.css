@@ -14,6 +14,20 @@
 body {
   overflow-x: hidden;
 }
+/* cursor*/
+.cursor{
+  display: block;
+  position: fixed;
+  z-index: 9999;
+  width: 40px;
+  aspect-ratio: 1;
+  border: 5px solid cyan;
+  box-shadow:0 0 10px black ,inset 0 0 10px black;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  visibility: visible;
+  pointer-events: none;
+}
 /* loading */
 #loader {
   display: grid;

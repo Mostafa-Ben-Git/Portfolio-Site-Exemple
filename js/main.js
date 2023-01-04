@@ -23,8 +23,7 @@ let hight = bodyHieght - windowHieght;
 window.addEventListener("scroll", () => {
   let scrollTop = document.documentElement.scrollTop;
   let h = ((scrollTop / hight) * 100) / 2;
-  slide1.style.width = `${h}%`;
-  slide2.style.width = `${h}%`;
+  slide1.style.width = slide2.style.width = `${h}%`;
 });
 // totop
 let totop = document.querySelector(".totop");
@@ -40,6 +39,12 @@ window.onscroll = function () {
   } else {
     totop.classList.remove("glow");
   }
-  console.log(scrollTop);
-  console.log(hight);
 };
+/* cursor*/
+let cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", function (e) {
+  let x = e.clientX;
+  let y = e.clientY;
+  cursor.style.left = x +'px'
+  cursor.style.top = y +'px'
+});
