@@ -36,8 +36,10 @@ window.onscroll = function () {
   }
   if (scrollTop > hight - windowHieght) {
     totop.classList.add("glow");
+    cursor.classList.add("glow");
   } else {
     totop.classList.remove("glow");
+    cursor.classList.remove("glow");
   }
 };
 /* cursor*/

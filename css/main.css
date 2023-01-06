@@ -14,6 +14,18 @@
 body {
   overflow-x: hidden;
 }
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: radial-gradient(var(--color1), var(--color2));
+  border-radius: 10px;
+}
 /* cursor*/
 .cursor {
   display: block;
@@ -25,8 +37,14 @@ body {
   box-shadow: 0 0 10px black, inset 0 0 10px black;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  visibility: visible;
   pointer-events: none;
+}
+.cursor.glow {
+  width: 10px;
+  background-color: white;
+  transition: 0.75s linear;
+  z-index: 99;
+  box-shadow: 0 0 10px 5px #fff, 0 0 30px 10px #f0f, 0 0 50px 25px #0ff;
 }
 /* loading */
 #loader {
@@ -36,7 +54,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: black;
-  z-index: 99999;
+  z-index: 9999;
 }
 #loader span {
   position: relative;
