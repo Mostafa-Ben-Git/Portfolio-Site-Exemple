@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb {
 .cursor {
   display: block;
   position: fixed;
-  z-index: 9999;
+  z-index: 999;
   width: 40px;
   aspect-ratio: 1;
   border: 5px solid cyan;
