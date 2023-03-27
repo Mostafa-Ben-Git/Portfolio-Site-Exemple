@@ -1,4 +1,4 @@
-# Simple Portfolio Site Example
+# Simple Portfolio Site Example [View The site](https://mostafa-ben-git.github.io/Portfolio-Site-Exemple/).
 
 This is a simple portfolio site example built using HTML, CSS, and JS. It is designed to showcase your skills, projects, and experiences in a professional and visually appealing manner. This README.md file will provide an overview of the site's features and how to get started.
 
@@ -12,7 +12,7 @@ The portfolio site includes the following features:
 * Projects section: The projects section includes a grid of project cards that showcase the site owner's work. Each card includes an image, title, and brief description of the project.
 * Contact section: The contact section provides a form that users can use to send a message to the site's owner.
 
-##Getting Started
+## Getting Started
 
 To customize the site to your needs, you can modify the HTML, CSS, and JS files. Here are a few examples of how you can customize the site:
 
